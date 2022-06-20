@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경주여행지</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+    *{
+        margin:0px;
+        padding:0px;
+        background-color: rgb(167, 209, 167);
+        border:0px red solid;
+    }
+    .title{
+        text-align:center;
+        background-color: silver;
+    }
+    .select ul li{
+        display:inline;
+        margin:0px 50px 0px 50px;
+        background-color: #6822a155;
+        border:1px solid black;
+        box-sizing: content-box;
+    }
+    .select ul{
+        text-align:center;
+        margin-top: 5px;
+        border:1px black solid;
+        width: 60%;
+        height: 21px;
+        margin-left: 20%;
+    }
+    .select ul li .link{
+        text-decoration: none;
+        color :black;
+        background-color: rgb(115, 117, 241);
+    }
+    .select ul li .link:visited{
+        text-decoration: none;
+        color :black;
+        background-color: rgb(115, 117, 241);
+    }
+    .select ul li .link:hover{
+        background-color: white;
+        padding:10px;
+        border:2px black solid;
+    }
+    div ul li:hover{
+        border:0px;
+    }
+    #irame{
+        text-align: center;
+        overflow: hidden ;
+        display:inline;
+        margin-left: 20%;
+        float:left;
+    }
+    iframe{
+        overflow: hidden ;
+        border:3px dashed black;
+        background-color: white;
+    }
+    .dropdown{
+        display:inline-block;
+        border:solid 1px red;
+        position:relative;
+    }
+    .dropdowncontent{
+        background-color: yellow;
+        display:none;
+        width:100px;
+        padding:10px;
+        line-height:30px;
+        position:absolute;
+    }
+    .dropdown:hover .dropdowncontent{
+        display:block;
+        background-color: aqua;
+    }
+    .list li{
+        display:block;
+        margin-top: 35px;
+        margin-bottom:35px;
+        width:200px;
+        height:40px;
+    }
+    .list{
+        margin-right:10%;
+        margin-top:50px;
+        font-size:22.5px;
+        text-align:center;
+        float:right;
+        display:inline;
+        background-color: #777777;
+    }
+    .list li{
+        background-color: rgb(115, 117, 241);
+        margin-left: 5px;
+        margin-right: 5px;
+        padding:0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 30px;
+        width:200px;
+    }
+    .list li a{
+        background-color: rgb(115, 117, 241);
+        text-decoration: none;
+        color:black;
+        margin-left: 0px;
+        padding-left:0px;
+        height: 30px;
+        width:200px;
+        
+    }
+    .list li a.link{
+        text-decoration: none;
+    }
+    .list li a.link:visited{
+        text-decoration: none;
+    }
+    
+    .ss{
+        text-align: center;
+    }
+    .ss a{
+        text-align: center;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 30px;
+    }
+    .select2{
+        display: inline;
+    }
+    .select2 ul{
+        display:inline;
+        text-align: right;
+    }
+    .select2 ul li{
+        display: inline;
+        font-family: 'Black Han Sans', sans-serif;
+        margin-left:10px;
+    }
+    .div{
+        display: inline;
+    }
+    #tab{
+        margin-top: 300px;
+        margin-bottom:20px;
+        display: block;
+        float:left;
+        margin-left: 20%;
+    }
+    #tab table{
+        background-color: black;
+    }
+    #tab table tr{
+        background-color: black;
+    }
+    #tab table tr td{
+        background-color: white;
+        border:black;
+        width: 10%;
+    }
+    #gm{
+        float:left;
+        display: inline;
+        width: 60%;
+        height: 60%;
+        margin: 0 20% 0 20%;
+    }
+    .bottommenu{ 
+        margin-left:20%;
+    }
+    .bottommenu div{
+        
+        margin-top:20px;
+        background-color: ivory;
+        float:left;
+        padding-left:10%;
+        padding-right:10%;
+        margin-bottom:50px;
+    }
+    .bottommenu div div{
+        margin:0px;
+        padding:0 20px 0  20px ;
+        margin-bottom: 5%;
+        border-left:1px solid black
+    }
+</style>
+<body>
+    <div>
+        <h1 class="title">경주 여행지</h1>
+    </div>
+    <div class="select2">
+        <ul>
+            <li><a href="https://www.gyeongju.go.kr/open_content/ko/index.do?test=1">경주시청</a></li>
+            <li><a href="https://www.gyeongju.go.kr/tour/index.do">문화관광</a></li>
+            <li><a href="https://council.gyeongju.go.kr/">경주시의회</a></li>
+        </ul>
+    </div>
+    <div class="ss">
+    <a>사진미리보기</a>
+    </div>
+    <div class="select">
+        <ul>
+            <li><a href="./img/bulpho.html" target="if" class=link>불국사</a></li>
+            <li><a href="./img/ampho.html" target="if" class="link">석굴암</a></li>
+            <li><a href="./img/chumpho.html" target="if" class="link">첨성대</a></li>
+            <li><a href="./img/dongpho.html" target="if" class="link">동궁과 월지</a></li>
+            <li><a href="./img/amupho.html" target="if" class="link">경주월드</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="dropdown">
+            <li class="dropdowncontent" href="https://www.gyeongju.go.kr/open_content/ko/index.do?test=1">경주시청</li>
+            <li class="dropdowncontent" href="https://www.gyeongju.go.kr/tour/index.do">경주문화</li>
+            <li class="dropdowncontent" href="https://www.letskorail.com/ebizprd/stationKtxView.do?stationSeq=10281790&searchCondition=ktx1&znCd=V190">신경주역</li>
+            <li class="dropdowncontent" href="https://map.naver.com/v5/?c=14146403.3782477,4526069.9702202,15,0,0,0,dh">지도</li>
+        </ul>
+    </div>
+    <div id="irame">
+        <iframe href="./img/bulpho.html" name="if" width="800px" height="800px" frameboder="1" ></iframe>
+    </div>
+    <div>
+        <ul class="list">
+            <li><a href="bul.html" class=link>불국사</a></li>
+            <li><a href="am.html" class="link">석굴암</a></li>
+            <li><a href="chum.html" class="link">첨성대</a></li>
+            <li><a href="dong.html" class="link">동궁과 월지</a></li>
+            <li><a href="amu.html" class="link">경주월드</a></li>
+        </ul>
+    </div>
+
+    <div id="tab">
+        <table >
+            <tr>
+                <td>면적</td>
+                <td>총인구</td>
+                <td>시장</td>
+                <td>시목</td>
+                <td>시화</td>
+                <td>시조</td>
+            </tr>
+            <tr>
+                <td>1,324.41 km2</td>
+                <td>251,889 명</td>
+                <td>주낙영</td>
+                <td>소나무</td>
+                <td>개나리</td>
+                <td>까치</td>
+            </tr>
+        </table>
+    </div>
+    <img src="./img/gmap.png" id="gm">
+    <div class="bottommenu">
+        <div>
+            <div>연락처:010-1234-5678</div>
+            <div>고객센터:02-123-1234</div>
+            <div>광고문의</div>
+            <div>이것문의</div>
+            <div>저것문의</div>
+            <div>다양한문의</div>
+        </div>
+    </div>
+</body>
+</html>
